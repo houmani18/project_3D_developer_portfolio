@@ -9,20 +9,14 @@ import {
   css,
   reactjs,
   redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -35,6 +29,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,19 +40,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front-end Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Js Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Back-end Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Laravel Developer",
     icon: creator,
   },
 ];
@@ -85,10 +83,6 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
@@ -97,28 +91,20 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
     icon: docker,
   },
+  
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "React js Developer",
+    icon: meta,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -129,36 +115,45 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Laravel  Developer",
+    icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Development and maintenance of web applications using Laravel and other related technologies.",
+      "Collaborate with cross-functional teams, including designers, product managers, and other developers, to create high-quality products.",
+      "Implementation of responsive design and guarantee of cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Back-end Developer",
+    icon: meta,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop and maintain web applications using PHP Laravel and other related technologies.",
+      "Collaborate with cross-functional teams, including designers, product managers, and other developers, to create high-quality products.",
+      "Implement responsive design and ensure cross-browser compatibility.",
+      "Participate in code reviews and provide constructive feedback to other developers.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Front-end Developer",
     icon: meta,
     iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using HTML, CSS, JavaScript, React.js, and Bootstrap to create interactive and user-friendly user interfaces.",
+      "Collaborating with multidisciplinary teams including designers, product managers, and other developers to design and deliver high-quality products, while meeting deadlines and functional requirements.",
+      "Implementing responsive designs to ensure optimal user experience across different devices and browsers, while maintaining cross-browser compatibility to ensure maximum accessibility.",
+      "Actively participating in code reviews by providing constructive feedback to other developers, thereby contributing to the continuous improvement of code and development practices.",
+    ],
+  },
+  {
+    title: "full stack  developer",
+    icon: meta,
+    iconBg: "#383E56",
     date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -188,7 +183,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Reda optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -198,62 +193,62 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Api search movies",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Search results are displayed clearly and concisely, showing the title of the movie, possibly a brief description or additional information, and options to learn more about the movie.",
     tags: [
       {
-        name: "react",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "REACT JS",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/houmani18/app-api",
   },
   {
-    name: "Job IT",
+    name: "Portfolio",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Users can search for specific items in my portfolio using relevant keywords such as skills, previous projects, technologies used, etc.can contact you directly if they are interested in your work .",
     tags: [
       {
-        name: "react",
+        name: "REACT JS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "RESTAPI",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "BOOTSTRAP",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/houmani18/REDA_HOUMANI",
   },
   {
-    name: "Trip Guide",
+    name: " hotel management system",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The system must allow customers to reserve rooms online, with the possibility of choosing the type of room, and making payment.",
     tags: [
       {
-        name: "nextjs",
+        name: "REACT JS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "LARAVEL",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "BOOTSTRAP",
         color: "pink-text-gradient",
       },
     ],

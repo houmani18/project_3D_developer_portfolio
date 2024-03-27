@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -39,7 +39,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "JavaScript Mastery",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "houmanireda18@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -62,7 +62,7 @@ const Contact = () => {
           alert("Ahh, something went wrong. Please try again.");
         }
       );
-  };
+  }
 
   return (
     <div
